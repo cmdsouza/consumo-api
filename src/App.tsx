@@ -1,14 +1,19 @@
-import Item from "./assets/components/Item";
-import Summary from "./assets/components/Summary";
+import { HashRouter as Router, Route, Routes, BrowserRouter } from "react-router-dom";
+import Dahsboard from "./assets/pages/Dashboard";
+import Data from "./assets/pages/Data";
+import Sidebar from "./assets/components/Sidebar";
 
 function App() {
-  
   return (
-    <>
-      <Summary />
-      <hr />
-      <Item />
-    </>
+    <div className="App">
+      <BrowserRouter>
+        <Sidebar /> 
+          <Routes>
+            <Route path="/" element={<Dahsboard />} />
+            <Route path="/dados" element={<Data />} />
+          </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
