@@ -99,7 +99,7 @@ function ChannelType() {
     <>
         <Card>
           <CardContent>
-            <Typography sx={{ fontSize: 14 }} color="#00AEED" fontWeight={"bold"} gutterBottom>
+            <Typography sx={{ fontSize: 14 }} color="#231F20" fontWeight={"bold"} gutterBottom>
               Canal usado nas transações
             </Typography>
             <PieChartchannelType />

@@ -73,7 +73,7 @@ function Status() {
         <CardContent>
           <Typography
             sx={{ fontSize: 14 }}
-            color="#00AEED"
+            color="#231F20"
             fontWeight={"bold"}
             gutterBottom
           >

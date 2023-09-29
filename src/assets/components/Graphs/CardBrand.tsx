@@ -104,7 +104,7 @@ function CardBrand() {
     <>
         <Card>
           <CardContent>
-            <Typography sx={{ fontSize: 14 }} color="#00AEED" fontWeight={"bold"} gutterBottom>
+            <Typography sx={{ fontSize: 14 }} color="#231F20" fontWeight={"bold"} gutterBottom>
               Marcas de cartão
             </Typography>
             <PieChartCardBrand />
