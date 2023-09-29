@@ -57,13 +57,12 @@ function Status() {
     >
       <ListItemIcon>
         <NumbersIcon
-          sx={{ color: "#00C49F", fontSize: "45px", marginLeft: "2%" }}
+          sx={{ color: "#00AEED", fontSize: "45px", marginLeft: "2%" }}
         />
       </ListItemIcon>
       <ListItemText
         primary={`${statusSellCounts[type]}`}
         secondary={`${type}`}
-        sx={{ primary: { color: "red" } }}
       />
     </ListItem>
   ));
@@ -74,7 +73,7 @@ function Status() {
         <CardContent>
           <Typography
             sx={{ fontSize: 14 }}
-            color="#1976d2"
+            color="#00AEED"
             fontWeight={"bold"}
             gutterBottom
           >

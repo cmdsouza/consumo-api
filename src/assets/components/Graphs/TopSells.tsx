@@ -48,7 +48,7 @@ function TopSells() {
         <CardContent>
           <Typography
             sx={{ fontSize: 14 }}
-            color="#1976d2"
+            color="#00AEED"
             fontWeight={"bold"}
             gutterBottom
           >
@@ -58,9 +58,9 @@ function TopSells() {
             {data.map((item) => (
               <ListItem key={item.name} sx={{ padding: "2.4px !important", borderBottom: "1px solid #C4E0FB" }}>
                 <ListItemIcon>
-                  <NumbersIcon sx={{ color: "#1976d2", fontSize:"45px", marginLeft:"2%" }}/>
+                  <NumbersIcon sx={{ color: "#00AEED", fontSize:"45px", marginLeft:"2%" }}/>
                 </ListItemIcon>
-                <ListItemText primary={"R$ " + item.value} secondary={"Venda " + item.name} sx={{ primary: { color: "red" } }} />
+                <ListItemText primary={"R$ " + item.value} secondary={"Venda " + item.name} />
               </ListItem>
             ))}
           </List>

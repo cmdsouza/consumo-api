@@ -48,13 +48,7 @@ function ChannelType() {
   };
 
   const COLORS = [
-    "#0088FE",
-    "#00C49F",
-    "#FFBB28",
-    "#FF8042",
-    "#F00",
-    "#0F0",
-    "#00F",
+    "#D66F68", "#5F7FE5", "#D18C19", "#0FD1CC", "#D12EAE", "#9E3A03"
   ];
 
   var numero = -1;
@@ -105,7 +99,7 @@ function ChannelType() {
     <>
         <Card>
           <CardContent>
-            <Typography sx={{ fontSize: 14 }} color="#1976d2" fontWeight={"bold"} gutterBottom>
+            <Typography sx={{ fontSize: 14 }} color="#00AEED" fontWeight={"bold"} gutterBottom>
               Canal usado nas transações
             </Typography>
             <PieChartchannelType />

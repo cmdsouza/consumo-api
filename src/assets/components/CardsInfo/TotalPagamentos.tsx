@@ -30,7 +30,7 @@ function TotalPagamentos() {
                           variant="h5"
                           fontWeight="bold"
                           component="div"
-                          color="#1976d2"
+                          color="#00AEED"
                         >
                           {repositories.summary.totalQuantity}
                         </Typography>
@@ -42,7 +42,7 @@ function TotalPagamentos() {
                         <PaymentIcon
                           style={{
                             fontSize: "50px",
-                            color: "#1976d2",
+                            color: "#00AEED",
                             position: "relative",
                             top: "5px",
                             left: "5px",

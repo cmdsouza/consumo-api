@@ -40,7 +40,7 @@ function ValorTotalLiquido() {
                           variant="h5"
                           fontWeight="bold"
                           component="div"
-                          color="#FFBB28"
+                          color="#00AEED"
                         >
                           {formatCurrency(repositories.summary.totalNetAmount)}
                         </Typography>
@@ -52,7 +52,7 @@ function ValorTotalLiquido() {
                         <WaterDropIcon
                           style={{
                             fontSize: "50px",
-                            color: "#FFBB28",
+                            color: "#00AEED",
                             position: "relative",
                             top: "5px",
                             left: "5px",

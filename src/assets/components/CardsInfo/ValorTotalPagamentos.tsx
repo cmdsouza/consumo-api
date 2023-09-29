@@ -40,7 +40,7 @@ function ValorTotalPagamentos() {
                           variant="h5"
                           fontWeight="bold"
                           component="div"
-                          color="#00C49F"
+                          color="#00AEED"
                         >
                           {formatCurrency(repositories.summary.totalAmount)}
                         </Typography>
@@ -52,7 +52,7 @@ function ValorTotalPagamentos() {
                         <AddCircleIcon
                           style={{
                             fontSize: "50px",
-                            color: "#00C49F",
+                            color: "#00AEED",
                             position: "relative",
                             top: "5px",
                             left: "5px",

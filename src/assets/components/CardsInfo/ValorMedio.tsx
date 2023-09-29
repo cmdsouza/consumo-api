@@ -40,7 +40,7 @@ function ValorMedio() {
                           variant="h5"
                           fontWeight="bold"
                           component="div"
-                          color="#FF8042"
+                          color="#00AEED"
                         >
                           {formatCurrency(repositories.summary.totalAverageAmount)}
                         </Typography>
@@ -52,7 +52,7 @@ function ValorMedio() {
                         <SafetyDividerIcon
                           style={{
                             fontSize: "50px",
-                            color: "#FF8042",
+                            color: "#00AEED",
                             position: "relative",
                             top: "5px",
                             left: "5px",

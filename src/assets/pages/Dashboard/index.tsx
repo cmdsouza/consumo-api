@@ -1,4 +1,4 @@
-import { Box, Grid } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import TotalPagamentos from "../../components/CardsInfo/TotalPagamentos";
 import ValorTotalPagamentos from "../../components/CardsInfo/ValorTotalPagamentos";
 import ValorTotalLiquido from "../../components/CardsInfo/ValorTotalLiquido";
@@ -18,8 +18,7 @@ function Dahsboard() {
           padding: "1% 1% 0% 1%",
         }}
       >
-
-        <h1>Dahsboard</h1>
+        <Typography variant="h4" display="block" gutterBottom marginTop="2%" color="#231F20" fontWeight="bold">Dahsboard</Typography>
 
         <div>
           <Grid

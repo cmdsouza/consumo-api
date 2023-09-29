@@ -48,7 +48,7 @@ function CardBrand() {
   };
 
   const COLORS = [
-    "#0088FE",
+    "#6A9DCA",
     "#00C49F",
     "#FFBB28",
     "#FF8042",
@@ -75,7 +75,6 @@ function CardBrand() {
                     cy="50%"
                     innerRadius={60}
                     outerRadius={80}
-                    fill="#8884d8"
                     paddingAngle={5}
                     dataKey="value"
                     >
@@ -105,7 +104,7 @@ function CardBrand() {
     <>
         <Card>
           <CardContent>
-            <Typography sx={{ fontSize: 14 }} color="#1976d2" fontWeight={"bold"} gutterBottom>
+            <Typography sx={{ fontSize: 14 }} color="#00AEED" fontWeight={"bold"} gutterBottom>
               Marcas de cartão
             </Typography>
             <PieChartCardBrand />
