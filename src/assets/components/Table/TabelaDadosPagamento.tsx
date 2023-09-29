@@ -14,6 +14,7 @@ import {
   DialogTitle,
   Grid,
   IconButton,
+  Tooltip,
   Typography,
   styled,
 } from "@mui/material";
@@ -181,14 +182,16 @@ function Item() {
                       {item.netAmount}
                     </StyledTableCell>
                     <StyledTableCell align="center">
-                      <InfoIcon
-                        sx={{
-                          fontSize: "18px",
-                          marginTop: "0%",
-                          marginBottom: "-10%",
-                        }}
-                        onClick={() => handleOpenModal(item)} // Chame a função ao clicar no ícone
-                      />
+                      <Tooltip title="Detalhes" placement="left">
+                        <InfoIcon
+                          sx={{
+                            fontSize: "18px",
+                            marginTop: "0%",
+                            marginBottom: "-10%",
+                          }}
+                          onClick={() => handleOpenModal(item)} // Chame a função ao clicar no ícone
+                        />
+                      </Tooltip>
                     </StyledTableCell>
                   </StyledTableRow>
                 );
