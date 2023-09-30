@@ -59,7 +59,7 @@ O projeto foi desenvolvido com **React** e **Typescript**. Durante o desenvolvim
 Por causa do curto tempo de desenvolvimento do projeto ou pelo tamanho do JSON de exemplo, algumas funcionalidades não foram desenvolvidas, mas poderão ser inclusas no projeto futuramente. Alguns exemplos são:
 - Inclusão de gráficos de linha nos cards de informação, mostrando a evolução do dado ao longo do tempo;
 - Refatoração de partes do código para melhor componetização dos elementos; 
-- Inclusão de filtros de dado (por data, texto, etc.).
+- Inclusão de filtros de dados (por data, texto, etc.).
 ## 😃 Obrigado!
 Agredeço a oportunidade de participar do bootcamp e poder desenvolver esse projeto! Foram duas semanas de muitos desafios e de muita aprendizagem. Com certeza levarei essa experiência para a vida!
 ## 👦 Autor
