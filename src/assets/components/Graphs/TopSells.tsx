@@ -52,7 +52,7 @@ function TopSells() {
             fontWeight={"bold"}
             gutterBottom
           >
-            Top 3 vendas
+            Top 3 transações
           </Typography>
           <List sx={{ width: "100%" }}>
             {data.map((item) => (

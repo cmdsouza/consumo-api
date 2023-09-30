@@ -1,5 +1,5 @@
-import React, { FC, ReactElement } from "react";
-import { Box, Container, Grid, Typography, Link } from "@mui/material";
+import { FC, ReactElement } from "react";
+import { Box, Typography, Link } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub"; // Importar o ícone do GitHub
 
 export const Footer: FC = (): ReactElement => {

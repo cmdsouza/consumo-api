@@ -77,7 +77,7 @@ function Status() {
             fontWeight={"bold"}
             gutterBottom
           >
-            Status das vendas
+            Status das transações
           </Typography>
           <List sx={{ width: "100%" }}>{statusSellSummary}</List>
         </CardContent>

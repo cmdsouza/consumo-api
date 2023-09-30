@@ -1,4 +1,4 @@
-import { Box, Card, CardContent,Grid,Typography } from "@mui/material";
+import { Box, Card, CardContent,Typography } from "@mui/material";
 import { useFetch } from "../../../hooks/useFetch";
 import { PureComponent } from "react";
 import {
@@ -100,7 +100,7 @@ function ChannelType() {
         <Card>
           <CardContent>
             <Typography sx={{ fontSize: 14 }} color="#231F20" fontWeight={"bold"} gutterBottom>
-              Canal usado nas transações
+              Transações por canal usado
             </Typography>
             <PieChartchannelType />
           </CardContent>
