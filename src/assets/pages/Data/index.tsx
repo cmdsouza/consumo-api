@@ -1,4 +1,4 @@
-import Item from "../../components/Table/TabelaDadosPagamento";
+import Item from "../../components/Table/PaymentDataTable";
 
 function Data() {
   return (

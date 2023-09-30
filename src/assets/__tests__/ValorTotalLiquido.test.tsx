@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { BrowserRouter } from 'react-router-dom';
-import ValorTotalLiquido from '../components/CardsInfo/ValorTotalLiquido';
+import ValorTotalLiquido from '../components/CardsInfo/TotalNetValue';
 
 describe("ValorTotalLiquido", () => {
   it("should render correctly", () => {

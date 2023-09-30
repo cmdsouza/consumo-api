@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { BrowserRouter } from 'react-router-dom';
-import ValorMedio from '../components/CardsInfo/ValorMedio';
+import ValorMedio from '../components/CardsInfo/AverageValue';
 
 describe("ValorMedio", () => {
   it("should render correctly", () => {

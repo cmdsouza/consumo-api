@@ -1,8 +1,8 @@
 import { Box, Grid, Typography } from "@mui/material";
-import TotalPagamentos from "../../components/CardsInfo/TotalPagamentos";
-import ValorTotalPagamentos from "../../components/CardsInfo/ValorTotalPagamentos";
-import ValorTotalLiquido from "../../components/CardsInfo/ValorTotalLiquido";
-import ValorMedio from "../../components/CardsInfo/ValorMedio";
+import TotalPagamentos from "../../components/CardsInfo/AllPayments";
+import ValorTotalPagamentos from "../../components/CardsInfo/TotalValuePayments";
+import ValorTotalLiquido from "../../components/CardsInfo/TotalNetValue";
+import ValorMedio from "../../components/CardsInfo/AverageValue";
 import CardBrand from "../../components/Graphs/CardBrand";
 import ChannelType from "../../components/Graphs/ChannelType";
 import TopSells from "../../components/Graphs/TopSells";
