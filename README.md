@@ -29,7 +29,7 @@ Em caso de dúvidas, fique à vontade para entrar em contato: `cmsouza1998@gmail
 1. Certifique-se de que você tenha o Node.js instalado em seu computador;
 2. Configure e inicie a API que fornecerá o JSON: `https://github.com/cmdsouza/api-bootcamp-cielo`
 3. Clone este repositório em seu computador;
-4. Instale as dependências do projeto: `npm install`
+4. Entre no diretório e instale as dependências do projeto: `npm install`
 5. Inicie o projeto: `npm run dev`
 6. Abra o projeto no endereço indicado no terminal e divirta-se 😁
 
@@ -40,6 +40,8 @@ O projeto foi desenvolvido com **React** e **Typescript**. Durante o desenvolvim
 - `React router DOM`: utilizado para criar rotas na aplicação;
 - `Axios`: utilizado para a requisição da API;
 - `Recharts`: biblioteca utilizada na criação de gráficos.
+- `Jest`: biblioteca utilizada para testes unitários.
+
 ## 🖼️ Screenshots
 ### 1️⃣ Dashboard
 ![Modal de detalhes](https://i.imgur.com/OJk92bO.png)

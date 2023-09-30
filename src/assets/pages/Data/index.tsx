@@ -1,7 +1,6 @@
 import Item from "../../components/Table/TabelaDadosPagamento";
 
 function Data() {
-  
   return (
     <>
       <Item />

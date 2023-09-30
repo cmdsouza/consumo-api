@@ -313,7 +313,7 @@ function Item() {
                     {selectedItem.paymentNode}
                   </Typography>
                   <Typography variant="caption" display="block" gutterBottom>
-                      Nó
+                    Nó
                   </Typography>
                 </Grid>
 
@@ -485,7 +485,10 @@ function Item() {
                     display="block"
                     gutterBottom
                     fontWeight="bold"
-                    style={{ color: selectedItem.grossAmount < 0 ? '#E10050' : '#459451' }}
+                    style={{
+                      color:
+                        selectedItem.grossAmount < 0 ? "#E10050" : "#459451",
+                    }}
                   >
                     {formatCurrency(selectedItem.grossAmount)}
                   </Typography>
@@ -511,7 +514,9 @@ function Item() {
                     display="block"
                     gutterBottom
                     fontWeight="bold"
-                    style={{ color: selectedItem.netAmount < 0 ? '#E10050' : '#459451' }}
+                    style={{
+                      color: selectedItem.netAmount < 0 ? "#E10050" : "#459451",
+                    }}
                   >
                     {formatCurrency(selectedItem.netAmount)}
                   </Typography>
@@ -625,7 +630,19 @@ function Item() {
                     justifyContent: "center",
                   }}
                 >
-                  <Chip label={selectedItem.status} size="small" style={{ marginTop: "-2%", marginBottom:"2%", color: "white", backgroundColor: selectedItem.status !== "Aprovada" ? '#E10050' : '#459451' }} />
+                  <Chip
+                    label={selectedItem.status}
+                    size="small"
+                    style={{
+                      marginTop: "-2%",
+                      marginBottom: "2%",
+                      color: "white",
+                      backgroundColor:
+                        selectedItem.status !== "Aprovada"
+                          ? "#E10050"
+                          : "#459451",
+                    }}
+                  />
                   <Typography variant="caption" display="block" gutterBottom>
                     Status
                   </Typography>
@@ -666,7 +683,12 @@ function Item() {
                     display="block"
                     gutterBottom
                     fontWeight="bold"
-                    style={{ color: selectedItem.administrationFee !== 0 ? '#E10050' : 'black' }}
+                    style={{
+                      color:
+                        selectedItem.administrationFee !== 0
+                          ? "#E10050"
+                          : "black",
+                    }}
                   >
                     {formatCurrency(selectedItem.administrationFee)}
                   </Typography>
@@ -692,7 +714,10 @@ function Item() {
                     display="block"
                     gutterBottom
                     fontWeight="bold"
-                    style={{ color: selectedItem.mdrTaxAmount !== 0 ? '#E10050' : 'black' }}
+                    style={{
+                      color:
+                        selectedItem.mdrTaxAmount !== 0 ? "#E10050" : "black",
+                    }}
                   >
                     {formatCurrency(selectedItem.mdrTaxAmount)}
                   </Typography>
@@ -718,7 +743,10 @@ function Item() {
                     display="block"
                     gutterBottom
                     fontWeight="bold"
-                    style={{ color: selectedItem.mdrFeeAmount !== 0 ? '#E10050' : 'black' }}
+                    style={{
+                      color:
+                        selectedItem.mdrFeeAmount !== 0 ? "#E10050" : "black",
+                    }}
                   >
                     {formatCurrency(selectedItem.mdrFeeAmount)}
                   </Typography>
@@ -743,8 +771,11 @@ function Item() {
                     variant="body2"
                     display="block"
                     gutterBottom
-                    fontWeight="bold" 
-                    style={{ color: selectedItem.mdrFeeAmount !== 0 ? '#E10050' : 'black' }}
+                    fontWeight="bold"
+                    style={{
+                      color:
+                        selectedItem.mdrFeeAmount !== 0 ? "#E10050" : "black",
+                    }}
                   >
                     {formatCurrency(selectedItem.minimumMDRAmmount)}
                   </Typography>
@@ -770,7 +801,10 @@ function Item() {
                     display="block"
                     gutterBottom
                     fontWeight="bold"
-                    style={{ color: selectedItem.withdrawAmount !== 0 ? '#E10050' : 'black' }}
+                    style={{
+                      color:
+                        selectedItem.withdrawAmount !== 0 ? "#E10050" : "black",
+                    }}
                   >
                     {formatCurrency(selectedItem.withdrawAmount)}
                   </Typography>
@@ -779,7 +813,6 @@ function Item() {
                   </Typography>
                 </Grid>
               </Grid>
-
             </div>
           )}
         </DialogContent>

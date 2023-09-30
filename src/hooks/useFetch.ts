@@ -10,6 +10,7 @@ export function useFetch<T = unknown>(url: string){
         axios.get(url)
         .then(response => {
             setData(response.data);
+            console.log(response.data);
         })
         .catch(err => {
             setError(err)

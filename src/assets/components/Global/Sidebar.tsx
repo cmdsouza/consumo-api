@@ -17,7 +17,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
-import DatasetIcon from '@mui/icons-material/Dataset';
+import DatasetIcon from "@mui/icons-material/Dataset";
 import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
@@ -128,9 +128,13 @@ export default function PersistentDrawerLeft() {
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
-              <InboxIcon style={{ color:"#1976d2" }} />
+                <InboxIcon style={{ color: "#1976d2" }} />
               </ListItemIcon>
-              <Link to="/" onClick={handleDrawerClose} style={{ textDecoration:"none", color:"#1976d2" }}>
+              <Link
+                to="/"
+                onClick={handleDrawerClose}
+                style={{ textDecoration: "none", color: "#1976d2" }}
+              >
                 <ListItemText primary="Dashboard" />
               </Link>
             </ListItemButton>
@@ -138,9 +142,13 @@ export default function PersistentDrawerLeft() {
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
-              <DatasetIcon style={{ color:"#1976d2" }} />
+                <DatasetIcon style={{ color: "#1976d2" }} />
               </ListItemIcon>
-              <Link to="/dados" onClick={handleDrawerClose} style={{ textDecoration:"none", color:"#1976d2" }}>
+              <Link
+                to="/dados"
+                onClick={handleDrawerClose}
+                style={{ textDecoration: "none", color: "#1976d2" }}
+              >
                 <ListItemText primary="Dados" />
               </Link>
             </ListItemButton>

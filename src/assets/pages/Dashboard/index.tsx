@@ -18,7 +18,16 @@ function Dahsboard() {
           padding: "1% 1% 0% 1%",
         }}
       >
-        <Typography variant="h4" display="block" gutterBottom marginTop="2%" color="#231F20" fontWeight="bold">Dahsboard</Typography>
+        <Typography
+          variant="h4"
+          display="block"
+          gutterBottom
+          marginTop="2%"
+          color="#231F20"
+          fontWeight="bold"
+        >
+          Dahsboard
+        </Typography>
 
         <div>
           <Grid
@@ -60,7 +69,6 @@ function Dahsboard() {
             <Grid item xs={8} sm={6} md={2}>
               <Status />
             </Grid>
-
           </Grid>
         </div>
       </Box>

@@ -1,4 +1,4 @@
-import { Box, Card, CardContent,Typography } from "@mui/material";
+import { Box, Card, CardContent, Typography } from "@mui/material";
 import { useFetch } from "../../../hooks/useFetch";
 import { PureComponent } from "react";
 import {
@@ -20,9 +20,7 @@ type Data = {
 };
 
 function CardBrand() {
-  const {
-    data: repositories,
-  } = useFetch<Data>("http://localhost:5000/data");
+  const { data: repositories } = useFetch<Data>("http://localhost:5000/data");
 
   // Objeto para rastrear as contagens de marcas de cartão
   const cardBrandCount: { [key: string]: number } = {};
@@ -67,34 +65,34 @@ function CardBrand() {
     render() {
       return (
         <Box>
-            <ResponsiveContainer width="100%" height={200}>
-                <PieChart>
-                    <Pie
-                    data={transformDataToJSON()}
-                    cx="50%"
-                    cy="50%"
-                    innerRadius={60}
-                    outerRadius={80}
-                    paddingAngle={5}
-                    dataKey="value"
-                    >
-                    {transformDataToJSON().map((item) => (
-                        <Cell
-                        key={`cell-${item.name}`}
-                        fill={COLORS[sortearCor() % COLORS.length]}
-                        />
-                    ))}
-                    </Pie>
-                    <Tooltip />
-                    <Legend
-                    align="left"
-                    verticalAlign="middle"
-                    layout="vertical"
-                    iconSize={10}
-                    iconType="circle"
-                    />
-                </PieChart>
-            </ResponsiveContainer>
+          <ResponsiveContainer width="100%" height={200}>
+            <PieChart>
+              <Pie
+                data={transformDataToJSON()}
+                cx="50%"
+                cy="50%"
+                innerRadius={60}
+                outerRadius={80}
+                paddingAngle={5}
+                dataKey="value"
+              >
+                {transformDataToJSON().map((item) => (
+                  <Cell
+                    key={`cell-${item.name}`}
+                    fill={COLORS[sortearCor() % COLORS.length]}
+                  />
+                ))}
+              </Pie>
+              <Tooltip />
+              <Legend
+                align="left"
+                verticalAlign="middle"
+                layout="vertical"
+                iconSize={10}
+                iconType="circle"
+              />
+            </PieChart>
+          </ResponsiveContainer>
         </Box>
       );
     }
@@ -102,14 +100,19 @@ function CardBrand() {
 
   return (
     <>
-        <Card>
-          <CardContent>
-            <Typography sx={{ fontSize: 14 }} color="#231F20" fontWeight={"bold"} gutterBottom>
-              Transações por bandeira de cartão
-            </Typography>
-            <PieChartCardBrand />
-          </CardContent>
-        </Card>
+      <Card>
+        <CardContent>
+          <Typography
+            sx={{ fontSize: 14 }}
+            color="#231F20"
+            fontWeight={"bold"}
+            gutterBottom
+          >
+            Transações por bandeira de cartão
+          </Typography>
+          <PieChartCardBrand />
+        </CardContent>
+      </Card>
     </>
   );
 }

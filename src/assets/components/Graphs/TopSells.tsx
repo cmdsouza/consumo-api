@@ -1,7 +1,7 @@
 import { Card, CardContent, List, ListItem, Typography } from "@mui/material";
 import { ListItemIcon } from "@mui/material";
 import ListItemText from "@mui/material/ListItemText";
-import NumbersIcon from '@mui/icons-material/Numbers';
+import NumbersIcon from "@mui/icons-material/Numbers";
 import { useFetch } from "../../../hooks/useFetch";
 
 type Item = {
@@ -12,8 +12,6 @@ type Item = {
 type Data = {
   items: Item[];
 };
-
-
 
 function TopSells() {
   const {
@@ -33,7 +31,7 @@ function TopSells() {
       value: item.grossAmount,
     };
   });
-  
+
   if (isFetching) {
     return <p>Carregando...</p>;
   }
@@ -56,11 +54,26 @@ function TopSells() {
           </Typography>
           <List sx={{ width: "100%" }}>
             {data.map((item) => (
-              <ListItem key={item.name} sx={{ padding: "2.4px !important", borderBottom: "1px solid #C4E0FB" }}>
+              <ListItem
+                key={item.name}
+                sx={{
+                  padding: "2.4px !important",
+                  borderBottom: "1px solid #C4E0FB",
+                }}
+              >
                 <ListItemIcon>
-                  <NumbersIcon sx={{ color: "#00AEED", fontSize:"45px", marginLeft:"2%" }}/>
+                  <NumbersIcon
+                    sx={{
+                      color: "#00AEED",
+                      fontSize: "45px",
+                      marginLeft: "2%",
+                    }}
+                  />
                 </ListItemIcon>
-                <ListItemText primary={"R$ " + item.value} secondary={"Venda " + item.name} />
+                <ListItemText
+                  primary={"R$ " + item.value}
+                  secondary={"Venda " + item.name}
+                />
               </ListItem>
             ))}
           </List>
