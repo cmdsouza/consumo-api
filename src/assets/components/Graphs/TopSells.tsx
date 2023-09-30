@@ -53,7 +53,7 @@ function TopSells() {
             Top 3 transações
           </Typography>
           <List sx={{ width: "100%" }}>
-            {data.map((item) => (
+            {data?.map((item) => (
               <ListItem
                 key={item.name}
                 sx={{

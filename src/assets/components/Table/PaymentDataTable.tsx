@@ -19,7 +19,7 @@ import {
   styled,
 } from "@mui/material";
 import InfoIcon from "@mui/icons-material/Info";
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 
 type Item = {
@@ -109,10 +109,10 @@ function Item() {
 
   // Adicione um estado para controlar a abertura/fechamento da Modal
   const [openModal, setOpenModal] = useState(false);
-  const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedItem, setSelectedItem] = useState<Item | null>();
 
   // Função para abrir a Modal quando o ícone é clicado
-  const handleOpenModal = (item) => {
+  const handleOpenModal = (item: Item) => {
     setSelectedItem(item);
     setOpenModal(true);
   };
